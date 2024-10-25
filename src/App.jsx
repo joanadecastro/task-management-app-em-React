@@ -4,7 +4,7 @@ import { useState } from 'react'
 function App() {
 
   return (
-    <div>joana</div>
+    <div>Ola React</div>
   )
 }
 
