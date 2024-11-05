@@ -60,11 +60,11 @@ To run the project locally, follow these steps:
 ```
 ### 2. Clone the Repository:
 ```bash
-   git clone https://github.com/joanadecastro/portfolio-react.git
+   git clone https://github.com/joanadecastro/task-management-app-em-React.git
 ```
 ### 3. Navigate to the project directory:
 ```bash
-   cd portfolio-react
+   cd task-management-app-em-React
 ```
 
 ### 4. Install Dependencies:
