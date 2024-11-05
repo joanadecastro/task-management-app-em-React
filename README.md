@@ -32,39 +32,20 @@ The To Do List project developed with ReactJS is a useful tool to help professio
 
 This project is built using the following frontend technologies and tools:
 
-### 1. React
-- Description**: JavaScript library for building interactive user interfaces.
-- **Features**:
-  - **Reusable Components**: Facilitates modular UI development and maintenance.
-  - JSX**: Syntax that allows writing HTML declaratively within JavaScript.
-  - Virtual DOM**: Improves performance by updating only the necessary parts of the UI.
-
-### 2. JavaScript (ES6+)
-- Description**: Programming language that adds logic and dynamism to the frontend.
-- **Features**:
-  - Use of modern syntax (ES6+) such as **arrow functions**, **destructuring**, and **spread operator** for clearer and more efficient code.
-  - Support for asynchronous programming with `async/await` and `promises`.
-
-### 3. HTML5
-- Description**: Markup language that structures the content of the application.
-- **Features**:
-  - **Semantic tags**: Improves accessibility and SEO of the project.
-  - Integration with React**: Defines the base structure on which the components are assembled.
-
-### 4. CSS3
-- Description**: Styling language for the visual design of the application.
-- **Features**:
-  - **Flexbox and Grid**: Used for responsive layout design.
-  - Animations and Transitions**: Adds visual effects that enhance the user experience.
-  - Media Queries**: Adapt the interface to different screen sizes.
-
-### 5. Libraries and Additional Tools
-- React Hooks**: `useState`, `useRef`, etc., used to manage state and effects in components.
-- Node.js and npm**: Node.js as development environment and npm as package manager to install dependencies and additional tools.
-
-
-This project leverages these technologies to provide a fast, modern and responsive user experience.
-
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="60" alt="react logo"  />
+  <img width="12" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="60" alt="nodejs logo"  />
+  <img width="12" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="60" alt="npm logo"  />
+  <img width="12" />
+</div>
 
 ## 📦 Installation
 
