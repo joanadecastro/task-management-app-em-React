@@ -1,12 +1,8 @@
+![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+
 # To Do List
 
 The To Do List project developed with ReactJS is a useful tool to help professionals organize their daily activities such as studying, playing sports, resting...Manage your tasks.
-
-
-## 🚧 Status do Projeto
-
-![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-
 
 ## 🎬 Demonstration
 
