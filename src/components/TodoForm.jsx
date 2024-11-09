@@ -17,12 +17,14 @@ const TodoForm = ({addTodo}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+   if(value && category) {
+    addTodo(value, category);
+    setValue("");
+    setCategory("");
    
-            addTodo(value, category);
-            setValue("");
-            setCategory("");
-  
-
+   } 
+           
+   
     }
 
 
