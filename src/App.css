@@ -54,7 +54,7 @@ button{
 }
 button:hover{
   box-shadow:inset 2px 2px 3px rgba(0, 0, 0, 0.5);
-  color:white;
+
 }
 
 .todo-list{
@@ -74,8 +74,14 @@ button:hover{
   align-items: center;
 }
 
-.complete{
+.complete.mark{
 background-color: #5cb85c;
+color:white;
+}
+
+.complete.unmark{
+  background-color: #4b5254;
+  color: rgb(156, 156, 156);
 }
 .remove{
 background-color:#d9534f ;
