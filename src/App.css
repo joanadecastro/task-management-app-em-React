@@ -90,3 +90,10 @@ input, select{
   border-radius: 3px;
   width: 100%;
 }
+
+
+.todo.completed .content p {
+  text-decoration: line-through;
+  color: gray;
+}
+

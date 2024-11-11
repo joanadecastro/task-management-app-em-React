@@ -11,7 +11,7 @@ function App() {
       id: 1,
       text: "Criar funcionalidade X no sistema",
       category: "Trabalho",
-      isCompleted: false,
+      isCompleted:true,
     },
     {
       id: 2,
@@ -45,6 +45,7 @@ function App() {
     setTodos(todos.map((todo =>
       todo.id === id ? { ...todo, isCompleteted: !todo.isCompleted } : todo
     )))
+    
   }
 
   return (
