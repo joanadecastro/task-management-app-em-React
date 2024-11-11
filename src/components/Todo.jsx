@@ -7,7 +7,7 @@ const Todo = ({todo, removeTodo, completeTodo}) => {
     <div  className={`todo ${todo.isCompleted ? 'completed' : ''}`}>
     <div className="content">
       <p>{todo.text}</p>
-      <p className="category">({todo.category})</p>
+      <p className="category">{todo.category}</p>
     </div>
     <div>
       <button className={`complete ${todo.isCompleted ? 'unmark' : 'mark'}`} onClick={() => completeTodo(todo.id) } >{todo.isCompleted ? "Desmarcar" : "Completar"}</button>

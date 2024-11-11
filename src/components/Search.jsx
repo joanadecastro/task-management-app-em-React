@@ -1,10 +1,17 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({searchTerm, setSearchTerm}) => {
   return (
     <div>
-      
+      <h2>Pesquisar:</h2>
+      <input
+        type="text"
+        placeholder='Pesquisar tarefas...'
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
     </div>
+
   )
 }
 
