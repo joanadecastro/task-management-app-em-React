@@ -11,7 +11,7 @@ function App() {
       id: 1,
       text: "Criar funcionalidade X no sistema",
       category: "Trabalho",
-      isCompleted:true,
+      isCompleted: false,
     },
     {
       id: 2,
@@ -42,10 +42,14 @@ function App() {
   }
 
   const completeTodo = (id) => {
-    setTodos(todos.map((todo =>
-      todo.id === id ? { ...todo, isCompleteted: !todo.isCompleted } : todo
-    )))
-    
+    console.log("completeTodo foi chamado com id:", id);
+
+    setTodos(
+      todos.map(todo =>
+      todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+    )
+  )
+
   }
 
   return (
@@ -54,14 +58,14 @@ function App() {
       <div className="todo-list">
         {todos.map((todo) => (
           <Todo
-          key={todo.id}
-          todo={todo}
-          removeTodo={removeTodo}
-          completeTodo={completeTodo}
+            key={todo.id}
+            todo={todo}
+            removeTodo={removeTodo}
+            completeTodo={completeTodo}
           />
         ))}
       </div>
-      <TodoForm addTodo={addTodo}/>
+      <TodoForm addTodo={addTodo} />
     </div>
   )
 }

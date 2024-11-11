@@ -92,8 +92,15 @@ input, select{
 }
 
 
+/* Adiciona um riscado nas tarefas completas */
 .todo.completed .content p {
   text-decoration: line-through;
   color: gray;
 }
+
+
+
+
+
+
 
