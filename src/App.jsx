@@ -2,7 +2,9 @@ import { useState } from 'react'
 import Todo from './components/Todo'
 import TodoForm from './components/TodoForm'
 import Search from './components/Search'
+import Filter from './components/Filter'
 import './App.css'
+
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
   ])
 
   const [searchTerm, setSearchTerm] = useState('')
+  const [filterCategory, setFilterCategory] = useState('')
 
   const addTodo = (text, category) => {
     const newTodo = {
@@ -49,20 +52,28 @@ function App() {
 
     setTodos(
       todos.map(todo =>
-      todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+        todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+      )
     )
-  )
 
   }
 
-  const filteredTodos = todos.filter((todo) => 
-    todo.text.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredTodos = todos.filter((todo) =>
+    todo.text.toLowerCase().includes(searchTerm.toLowerCase()) &&
+    (filterCategory === '' || todo.category === filterCategory)
   )
+
+
 
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <div className="todo-list">
+        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      </div>
+      <div className="todo-list">
+        <Filter filterCategory={filterCategory} setFilterCategory={setFilterCategory} />
+      </div>
       <div className="todo-list">
         {filteredTodos.map((todo) => (
           <Todo
