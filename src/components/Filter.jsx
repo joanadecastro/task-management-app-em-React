@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Filter = ({status, setStatus}) => {
+const Filter = ({status, setStatus, setSortOrder}) => {
   return (
     <div className='filter'>
       <h2>Filtrar:</h2>
@@ -15,8 +15,8 @@ const Filter = ({status, setStatus}) => {
         </div>
         <div>
           <p>Ordem alfabética:</p>
-          <button>Asc</button>
-          <button>Desc</button>
+          <button onClick={() => setSortOrder('asc')}>Asc</button>
+          <button onClick={() => setSortOrder('desc')}>Desc</button>
         </div>
       </div>
 
