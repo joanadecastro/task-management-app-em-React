@@ -1,15 +1,25 @@
 import React from 'react'
 
-const Filter = ({filterCategory, setFilterCategory}) => {
+const Filter = () => {
   return (
-    <div>
-      <h2>Filtrar por categoria:</h2>
-      <select value={filterCategory} onChange={(e) => setFilterCategory(e.target.value)}>
-        <option value="">Todas</option>
-        <option value="Trabalho">Trabalho</option>
-        <option value="Pessoal">Pessoal</option>
-        <option value="Estudos">Estudos</option>
-      </select>
+    <div className='filter'>
+      <h2>Filtrar:</h2>
+      <div className="filter-options">
+        <div>
+          <p>Status:</p>
+          <select>
+            <option value="All">Todas</option>
+            <option value="Completed">Completas</option>
+            <option value="Incomplet">Incompletas</option>
+          </select>
+        </div>
+        <div>
+          <p>Ordem alfabética:</p>
+          <button>Asc</button>
+          <button>Desc</button>
+        </div>
+      </div>
+
     </div>
   )
 }

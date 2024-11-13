@@ -2,7 +2,7 @@ import React from 'react'
 
 const Search = ({searchTerm, setSearchTerm}) => {
   return (
-    <div>
+    <div className='search'>
       <h2>Pesquisar:</h2>
       <input
         type="text"

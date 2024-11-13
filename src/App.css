@@ -42,9 +42,9 @@ input{
   box-sizing: border-box;
 }
 button{
-  background-color: #bbbbbb;
+  background-color: #1d1864;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  color:#181717;
+  color:white;
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
@@ -105,7 +105,18 @@ input, select{
 }
 
 .category{
-  color:rgb(202, 174, 17)
+  color:white;
+}
+
+.filter-options {
+display: flex;
+justify-content:space-between;
+gap: 3em;
+}
+
+.filter-options div{
+flex: 1 1 0;
+
 }
 
 
