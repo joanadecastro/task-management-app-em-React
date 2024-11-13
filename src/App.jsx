@@ -31,7 +31,7 @@ function App() {
   ])
 
   const [searchTerm, setSearchTerm] = useState('')
-  const [filterCategory, setFilterCategory] = useState('')
+  const [status, setStatus] = useState('All')
 
   const addTodo = (text, category) => {
     const newTodo = {
@@ -60,7 +60,10 @@ function App() {
 
   const filteredTodos = todos.filter((todo) =>
     todo.text.toLowerCase().includes(searchTerm.toLowerCase()) &&
-    (filterCategory === '' || todo.category === filterCategory)
+  (status === 'All' ||
+    (status === 'Completed' && todo.isCompleted) ||
+    (status === 'Incomplet' && !todo.isCompleted))
+
   )
 
 
@@ -72,7 +75,7 @@ function App() {
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
       <div className="todo-list">
-        <Filter filterCategory={filterCategory} setFilterCategory={setFilterCategory} />
+        <Filter status={status} setStatus={setStatus} />
       </div>
       <div className="todo-list">
         {filteredTodos.map((todo) => (
