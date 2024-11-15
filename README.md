@@ -7,7 +7,7 @@ The To Do List project developed with ReactJS is a useful tool to help professio
 ## 🎬 Demonstration
 
 <div align="center">
-  <img src="https://github.com/joanadecastro/task-management-app-em-React/blob/main/src/img/cap1.png" width="30"/>
+  <img src="https://github.com/joanadecastro/task-management-app-em-React/blob/main/src/img/cap1.png" />
     <img width="30" />
   <img src="https://github.com/joanadecastro/task-management-app-em-React/blob/main/src/img/cap2.png"  />
      <img width="50" />
