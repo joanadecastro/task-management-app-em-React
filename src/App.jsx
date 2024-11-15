@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Todo from './components/Todo'
 import TodoForm from './components/TodoForm'
 import Search from './components/Search'
@@ -9,7 +9,9 @@ import './App.css'
 
 function App() {
 
-  const [todos, setTodos] = useState([
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem("todos");
+    return savedTodos ? JSON.parse(savedTodos) : [
     {
       id: 1,
       text: "Criar funcionalidade X no sistema",
@@ -28,11 +30,15 @@ function App() {
       category: "Estudos",
       isCompleted: false,
     },
-  ])
+  ]})
 
   const [searchTerm, setSearchTerm] = useState('')
   const [status, setStatus] = useState('All')
   const [sortOrder, setSortOrder] = useState('')
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
 
   const addTodo = (text, category) => {
     const newTodo = {

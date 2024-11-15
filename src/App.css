@@ -1,50 +1,46 @@
-body{
+body {
   font-family: Arial;
   background-color: #f4f4f4;
   padding: 30px;
   color: #333;
   background-image: url('./img/fundo_task.jpg');
-
+  background-position: center;
   background-size: cover;
 }
 
-.app{
+.app {
   max-width: 600px;
- 
   background-color: #4b5254;
   padding: 20px 30px;
   border-radius: 10px;
   opacity: 0.93;
-  color:white;
+  color: white;
   box-shadow: 4px 8px 20px rgba(0, 0, 0, 1);
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-
+  margin: 0 auto 300px;
 }
 
-h1{
+h1 {
   text-align: center;
-  color:#bbbaba; 
+  color: #bbbaba;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 }
 
-h2{
+h2 {
   margin-bottom: 10px;
 }
 
-p{
+p {
   margin: 10px 0;
 }
 
-input{
+input {
   box-sizing: border-box;
 }
-button{
+
+button {
   background-color: #1d1864;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  color:white;
+  color: white;
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
@@ -52,18 +48,19 @@ button{
   transition: 0.3s;
   margin-right: 10px;
 }
-button:hover{
-  box-shadow:inset 2px 2px 3px rgba(0, 0, 0, 0.5);
+
+button:hover {
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.5);
 
 }
 
-.todo-list{
+.todo-list {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #f8f7f7;
 }
 
-.todo{
+.todo {
   background-color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   padding: 10px;
@@ -74,22 +71,26 @@ button:hover{
   align-items: center;
 }
 
-.complete.mark{
-background-color: #5cb85c;
-color:white;
+.complete.mark {
+  background-color: #5cb85c;
+  color: white;
 }
 
-.complete.unmark{
+.complete.unmark {
   background-color: #4b5254;
   color: rgb(156, 156, 156);
 }
-.remove{
-background-color:#d9534f ;
+
+.remove {
+  background-color: #d9534f;
 }
-.todo-form{
+
+.todo-form {
   padding-bottom: 1.5rem;
 }
-input, select{
+
+input,
+select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #DDD;
@@ -104,24 +105,17 @@ input, select{
   color: gray;
 }
 
-.category{
-  color:white;
+.category {
+  color: white;
 }
 
 .filter-options {
-display: flex;
-justify-content:space-between;
-gap: 3em;
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
 }
 
-.filter-options div{
-flex: 1 1 0;
+.filter-options div {
+  flex: 1 1 0;
 
 }
-
-
-
-
-
-
-
